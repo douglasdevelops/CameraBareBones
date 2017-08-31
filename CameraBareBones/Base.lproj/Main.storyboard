@@ -36,6 +36,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="frL-N5-fVJ">
+                        <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" systemItem="camera" id="5ci-hF-qCT">
                             <color key="tintColor" red="0.5450980392" green="0.76470588240000004" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
@@ -44,9 +45,13 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="organize" id="2dy-5a-lEy">
                             <color key="tintColor" red="0.5450980392" green="0.76470588240000004" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="TakeVideo_Pressed:" destination="BYZ-38-t0r" id="NoA-mX-Djp"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="previewView" destination="tFY-ns-Ftb" id="bKW-LW-wte"/>
                         <segue destination="VI6-Dl-Pb8" kind="show" identifier="PhotoViewerVC" id="RRO-U4-DHc"/>
                     </connections>
                 </viewController>

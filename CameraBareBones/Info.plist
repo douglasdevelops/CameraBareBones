@@ -36,5 +36,7 @@
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>We need access to your camera in order to take photos</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>We need access to your microphone</string>
 </dict>
 </plist>
